@@ -51,28 +51,28 @@ input {
     <td><input type="button" value="/"></td>
   </tr>
 </table>
-<script type="text/javascript">
-var x=document.getElementsByTagName("input");
-for(var f1 in x){
-  x[f1].onclick = function(){
-    m(this.value)
-  }
-}
-document.getElementById("s").onclick = function(){
-  var ss = document.getElementById("msg").value;
-  document.getElementById("r").value = eval(ss);
-};
-document.getElementById("c").onclick = function(){
-  document.getElementById("msg").value="";
-  document.getElementById("r").value="";
-}
-function m(s){
-  var ss = document.getElementById("msg").value;
-  ss = ss || "";
-  ss = ""+ss + s;
-  document.getElementById("msg").value= ss;
-}
-</script>
+<!--<script type="text/javascript">-->
+<!--var x=document.getElementsByTagName("input");-->
+<!--for(var f1 in x){-->
+  <!--x[f1].onclick = function(){-->
+    <!--m(this.value)-->
+  <!--}-->
+<!--}-->
+<!--document.getElementById("s").onclick = function(){-->
+  <!--var ss = document.getElementById("msg").value;-->
+  <!--document.getElementById("r").value = eval(ss);-->
+<!--};-->
+<!--document.getElementById("c").onclick = function(){-->
+  <!--document.getElementById("msg").value="";-->
+  <!--document.getElementById("r").value="";-->
+<!--}-->
+<!--function m(s){-->
+  <!--var ss = document.getElementById("msg").value;-->
+  <!--ss = ss || "";-->
+  <!--ss = ""+ss + s;-->
+  <!--document.getElementById("msg").value= ss;-->
+<!--}-->
+<!--</script>-->
 </body>
 </html>
 

@@ -14,6 +14,11 @@ input {
     <h1>
       学习一些网页的制作技术
     </h1>
+    <h3 style="color: #3459b2"
+    <br><br>
+      我计划制作一些类似下面计算器这种小游戏
+    <br>
+    </h3>
   </head>
 
 
@@ -56,33 +61,33 @@ input {
     <td><input type="button" value="/"></td>
   </tr>
 </table>
-<a href="https://github.com/pasino123/pasino123.github.io" style="background-color: aliceblue;size: a4">
+<a href="https://github.com/pasino123/pasino123.github.io" style="background-color: rgb(255,246,244);size: a4;color: rgb(0,75,255)">
   <br>
   <br>
   这是这个网页项目的地址
 </a>
-<!--<script type="text/javascript">-->
-<!--var x=document.getElementsByTagName("input");-->
-<!--for(var f1 in x){-->
-  <!--x[f1].onclick = function(){-->
-    <!--m(this.value)-->
-  <!--}-->
-<!--}-->
-<!--document.getElementById("s").onclick = function(){-->
-  <!--var ss = document.getElementById("msg").value;-->
-  <!--document.getElementById("r").value = eval(ss);-->
-<!--};-->
-<!--document.getElementById("c").onclick = function(){-->
-  <!--document.getElementById("msg").value="";-->
-  <!--document.getElementById("r").value="";-->
-<!--}-->
-<!--function m(s){-->
-  <!--var ss = document.getElementById("msg").value;-->
-  <!--ss = ss || "";-->
-  <!--ss = ""+ss + s;-->
-  <!--document.getElementById("msg").value= ss;-->
-<!--}-->
-<!--</script>-->
+<script type="text/javascript">
+var x=document.getElementsByTagName("input");
+for(var f1 in x){
+  x[f1].onclick = function(){
+    m(this.value)
+  }
+}
+document.getElementById("s").onclick = function(){
+  var ss = document.getElementById("msg").value;
+  document.getElementById("r").value = eval(ss);
+};
+document.getElementById("c").onclick = function(){
+  document.getElementById("msg").value="";
+  document.getElementById("r").value="";
+}
+function m(s){
+  var ss = document.getElementById("msg").value;
+  ss = ss || "";
+  ss = ""+ss + s;
+  document.getElementById("msg").value= ss;
+}
+</script>
 </body>
 </html>
 

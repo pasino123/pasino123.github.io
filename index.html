@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
   <meta name="google-site-verification" content="t4YFtUGvz-y94pdrCiSbUCALNEtM8IpoQHbr1bmdByc" />
@@ -69,13 +69,18 @@ input {
   这是这个网页项目的地址
 </a>
 <script type="text/javascript">
-   // var deepcoloer=style.background.
+   //  var deepcoloer=style.background.
+   // var deepcoloer=background.color("cornflower-blue")
 
 var x=document.getElementsByTagName("input");
 for(var f1 in x){
   x[f1].onclick = function(){
-    m(this.value)
+    m(this.value);
+      var cjf=document.getElementsByTagName("input");
+     cjf.style="background-color: cornflowerblue";
   }
+  // x[f1].mousedown=function () {
+  //     document.forms.="background-color: cornflowerblue"
 }
 document.getElementById("s").onclick = function(){
   var ss = document.getElementById("msg").value;

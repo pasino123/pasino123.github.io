@@ -73,15 +73,16 @@ input {
    // var deepcoloer=background.color("cornflower-blue")
 
 var x=document.getElementsByTagName("input");
-for(var f1 in x){
-  x[f1].onclick = function(){
-    m(this.value);
-      var cjf=document.getElementsByTagName("input");
-     cjf.style="background-color: cornflowerblue";
-  }
-  // x[f1].mousedown=function () {
-  //     document.forms.="background-color: cornflowerblue"
-}
+for(var f1 in x) {
+    x[f1].onclick = function () {
+        m(this.value);
+        //  var cjf=document.getElementsByTagName("input");
+        // cjf.style.background='red';
+    };
+    x[f1].mousedown = function () {
+        kk();
+    };
+};
 document.getElementById("s").onclick = function(){
   var ss = document.getElementById("msg").value;
   document.getElementById("r").value = eval(ss);
@@ -89,13 +90,17 @@ document.getElementById("s").onclick = function(){
 document.getElementById("c").onclick = function(){
   document.getElementById("msg").value="";
   document.getElementById("r").value="";
-}
+};
 function m(s){
   var ss = document.getElementById("msg").value;
   ss = ss || "";
   ss = ""+ss + s;
   document.getElementById("msg").value= ss;
 }
+function kk(){
+    var cjf = document.getElementsByTagName("input");
+    cjf.style.background = 'red';
+};
 </script>
 </body>
 </html>
